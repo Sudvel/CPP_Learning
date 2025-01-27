@@ -387,26 +387,148 @@ using namespace std;
 //     return ar+2;
 // }
 
-struct applicant
-{
-    char name[30];
-    int credit_ratings[3];
-};
+// struct applicant
+// {
+//     char name[30];
+//     int credit_ratings[3];
+// };
 
-void f1(applicant *a);
-const char* f2(const applicant * a1, const applicant * a2);
+// void f1(applicant *a);
+// const char* f2(const applicant * a1, const applicant * a2);
 
-typedef void (*t_p1)(applicant *a);
-typedef void *(*t_ap[5])(applicant *a);
+// typedef void (*t_p1)(applicant *a);
+// typedef void *(*t_ap[5])(applicant *a);
+
+// int main()
+// {
+//     //void (*p1)(applicant *a) = f1;
+//     t_p1 p1 = f1;
+//     const char* (*p2)(const applicant * a1, const applicant * a2) = f2;
+//     //void *(*ap[5])(applicant *a);
+//     t_ap ap;
+    
+//     const char* *(*(*p2[10]))(const applicant * a1, const applicant * a2);
+
+// }
+
+
+// void swapr(int & a, int & b);
+// int main()
+// {
+//     double a, b;
+//     a = 5; b = 10;
+// }
+
+// void swapr(int & a, int & b)
+// {
+//     int temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+
+// template <typename T>
+// void Swap(T &a, T&b);
+// int main()
+// {
+//     int a, b;
+//     char c, d;
+//     cout << "Enter 2 numbers:";
+//     cin >> a >> b;
+//     swap(a, b);
+//     cout << a << ", " << b << endl;
+//     cout << "Enter 2 characters: ";
+//     cin >> c >> d;
+//     swap(c, d);
+//     cout << c << ", " << d << endl;
+// }
+// template <typename T>
+// void Swap(T &a, T&b)
+// {
+//     T temp;
+//     temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+// void song(char * name = "o, my apap", int times = 1);
+// void iquote(int n);
+// void iquote(double n);
+// void iquote(string str);
+// int main()
+// {
+    
+// }
+// void iquote(int n)
+// {
+//     cout << n;
+// }
+// void iquote(double n)
+// {
+//     cout << n;
+// }
+// void iquote(string str)
+// {
+//     cout << str;
+// }
+
+
+// struct box
+// {
+//     char maker[40];
+//     float height;
+//     float width;
+//     float lenght;
+//     float volume;
+// };
+// void show_box(const box& b);
+// void set_box(box& b);
+// int main()
+// {
+
+// }
+// void show_box(const box& b)
+// {
+//     cout << "Your box:" << endl
+//     << b.maker << endl 
+//     << b.height << endl
+//     << b.width << endl
+//     << b.lenght << endl
+//     << b.volume << endl;
+// }
+// void set_box(box& b)
+// {
+//     b.volume = b.height * b.width * b.lenght;
+// }
+
+
+// struct BOX
+// {
+//     char maker[40];
+//     float height;
+//     float width;
+//     float lenght;
+//     float volume;
+// };
+// template<typename T>
+// T maximum(T a, T b)
+// {
+//     return a > b? a:b;
+// }
+// template <> BOX maximum(BOX a, BOX b)
+// {
+//     return a.volume > b.volume?a:b;
+// }
+// int main()
+// {
+//     cout << maximum(2, 1) << endl;
+//     cout << maximum('a', 'b');
+// }
+
 
 int main()
 {
-    //void (*p1)(applicant *a) = f1;
-    t_p1 p1 = f1;
-    const char* (*p2)(const applicant * a1, const applicant * a2) = f2;
-    //void *(*ap[5])(applicant *a);
-    t_ap ap;
-    
-    const char* *(*(*p2[10]))(const applicant * a1, const applicant * a2);
-
+    char * arr[4];
+    arr[0] = "riojfndvk";
+    cout << arr[0];
 }
