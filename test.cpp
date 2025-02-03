@@ -4,6 +4,8 @@
 #include <cstdlib>
 #include <climits>
 #include <vector>
+#include <cstring>
+#include "test_library.h"
 using namespace std;
 
 // int main()
@@ -528,7 +530,9 @@ using namespace std;
 
 int main()
 {
-    char * arr[4];
-    arr[0] = "riojfndvk";
-    cout << arr[0];
+    char name[40];
+    cin.getline(name, 40);
+    int l_name = strlen(name);
+    cout << l_name;
+
 }

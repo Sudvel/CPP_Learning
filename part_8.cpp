@@ -23,7 +23,9 @@ int main()
 //task_3();
 //task_4();
 //task_5();
-//task_6();
+task_6();
+cin.get();
+cin.get();
 }
 
 
